@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    tools:context=".Views.CadastrarPessoa">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editNome_pessoa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:maxLength="30"
+            android:hint="Digite o nome da pessoa"
+            android:inputType="textCapWords|textCapSentences" />
+
+        <EditText
+            android:id="@+id/editEmail_pessoa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:maxLength="30"
+            android:hint="Digite o e-mail da pessoa"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTelefone_pessoa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Digite o telefone da pessoa"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/button_insert_pessoa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#397939"
+            android:layout_margin="5dp"
+            android:contentDescription="Confirmar cadastro de pessoa."
+            android:text="Cadastrar pessoa"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_list_pessoas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#171688"
+            android:layout_margin="5dp"
+            android:contentDescription="Ir para página de listagem de pessoas."
+            android:text="Listar pessoas"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

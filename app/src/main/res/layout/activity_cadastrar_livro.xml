@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    tools:context=".Views.CadastrarLivro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTitulo_livro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:layout_margin="5dp"
+            android:hint="Digite o título do livro"
+            android:inputType="textCapWords|textCapSentences" />
+
+        <EditText
+            android:id="@+id/editAutor_livro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:layout_margin="5dp"
+            android:hint="Digite o autor do livro"
+            android:inputType="textCapWords|textCapSentences" />
+
+        <EditText
+            android:id="@+id/editEditora_livro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:layout_margin="5dp"
+            android:hint="Digite a editora do livro"
+            android:inputType="textCapWords|textCapSentences" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCategoria_livro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:layout_margin="5dp"
+            android:completionThreshold="1"
+            android:inputType="textCapWords|textCapSentences"
+            android:hint="Descreva o gênero do livro" />
+
+        <EditText
+            android:id="@+id/editPaginas_livro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:maxLength="3"
+            android:hint="Digite a quantidade de páginas do livro"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editAno_publicacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:maxLength="4"
+            android:hint="Digite o ano de publicação do livro"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/button_insert_livro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#397939"
+            android:layout_margin="5dp"
+            android:contentDescription="Confirmar cadastro de livro."
+            android:text="Cadastrar livro"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_list_livros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#171688"
+            android:layout_margin="5dp"
+            android:contentDescription="Ir para página de listagem de livros."
+            android:text="Listar livros"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

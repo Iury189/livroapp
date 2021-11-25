@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Livro App</string>
+
+    <string-array name="categoria_livro">
+        <item> Auto ajuda </item>
+        <item> Biografia </item>
+        <item> Educação </item>
+        <item> Ficção científica </item>
+        <item> Manual </item>
+        <item> Literatura </item>
+        <item> Poesia </item>
+        <item> Romance </item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textId_livro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="ID livro"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTitulo_livro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o título do livro"
+            android:layout_margin="5dp"
+            android:maxLength="30"
+            android:inputType="textCapWords|textCapSentences" />
+
+        <EditText
+            android:id="@+id/editAutor_livro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o autor do livro"
+            android:layout_margin="5dp"
+            android:maxLength="30"
+            android:inputType="textCapWords|textCapSentences" />
+
+        <EditText
+            android:id="@+id/editEditora_livro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite a editora do livro"
+            android:layout_margin="5dp"
+            android:maxLength="30"
+            android:inputType="textCapWords|textCapSentences" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCategoria_livro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:layout_margin="5dp"
+            android:completionThreshold="1"
+            android:inputType="textCapWords|textCapSentences"
+            android:hint="Descreva o gênero do livro" />
+
+        <EditText
+            android:id="@+id/editPaginas_livro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite a quantidade de páginas do livro"
+            android:layout_margin="5dp"
+            android:maxLength="3"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editAno_publicacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o ano de publicação do livro"
+            android:layout_margin="5dp"
+            android:maxLength="4"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/button_update_livro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3a21d4"
+            android:contentDescription="Confirmar alteração das informações do livro"
+            android:text="Alterar livro"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:layout_margin="5dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_delete_livro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d42121"
+            android:contentDescription="Confirmar Excluisão de livro"
+            android:text="Excluir livro"
+            android:textAlignment="center"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <View
+            android:background="#C5C5C5"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

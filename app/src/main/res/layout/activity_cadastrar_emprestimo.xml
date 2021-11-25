@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    tools:context=".Views.CadastrarEmprestimo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoDono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:layout_margin="5dp"
+            android:completionThreshold="1"
+            android:inputType="textCapWords|textCapSentences"
+            android:hint="Escolha o dono do livro" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoLivro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:layout_margin="5dp"
+            android:completionThreshold="1"
+            android:inputType="textCapWords|textCapSentences"
+            android:hint="Escolha o livro a ser emprestado" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoPessoa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:layout_margin="5dp"
+            android:completionThreshold="1"
+            android:inputType="textCapWords|textCapSentences"
+            android:hint="Escolha a pessoa que pegará o livro emprestado" />
+
+        <EditText
+            android:id="@+id/editData_devolucao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Defina a data da devolução do livro"
+            android:focusable="false"
+            android:cursorVisible="false"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/editHora_devolucao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Defina a hora da devolução do livro"
+            android:focusable="false"
+            android:cursorVisible="false"
+            android:inputType="time" />
+
+        <Button
+            android:id="@+id/button_insert_emprestimo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#397939"
+            android:layout_margin="5dp"
+            android:contentDescription="Confirmar cadastro de empréstimo."
+            android:text="Cadastrar empréstimo"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_list_emprestimos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#171688"
+            android:contentDescription="Ir para página de listagem de empréstimos."
+            android:text="Listar empréstimos"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

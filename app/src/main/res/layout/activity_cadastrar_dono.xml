@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    tools:context=".Views.CadastrarDono">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editNome_dono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:layout_margin="5dp"
+            android:hint="Digite o nome do dono do livro"
+            android:inputType="textCapWords|textCapSentences" />
+
+        <EditText
+            android:id="@+id/editEmail_dono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:layout_margin="5dp"
+            android:hint="Digite o e-mail do dono do livro"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTelefone_dono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Digite o telefone do dono do livro"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/button_insert_dono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#397939"
+            android:contentDescription="Confirmar cadastro de dono."
+            android:text="Cadastrar dono"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_list_donos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#171688"
+            android:contentDescription="Ir para página de listagem de donos."
+            android:text="Listar donos"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

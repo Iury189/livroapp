@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.iury.livroapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Views.CadastrarPessoa" android:parentActivityName=".Views.SessaoPessoa"></activity>
+        <activity android:name=".Views.ListarEmprestimos" android:parentActivityName=".Views.SessaoEmprestimo"/>
+        <activity android:name=".Views.ListarLivros" android:parentActivityName=".Views.SessaoLivro"/>
+        <activity android:name=".Views.ListarDonos" android:parentActivityName=".Views.SessaoDono"/>
+        <activity android:name=".Views.ListarPessoas" android:parentActivityName=".Views.SessaoPessoa"/>
+        <activity android:name=".Views.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Views.SessaoDono" android:parentActivityName=".Views.MainActivity"/>
+        <activity android:name=".Views.SessaoPessoa" android:parentActivityName=".Views.MainActivity"/>
+        <activity android:name=".Views.SessaoLivro" android:parentActivityName=".Views.MainActivity"/>
+        <activity android:name=".Views.SessaoEmprestimo" android:parentActivityName=".Views.MainActivity"/>
+        <activity android:name=".Views.CadastrarDono" android:parentActivityName=".Views.SessaoDono"/>
+        <activity android:name=".Views.CadastrarLivro" android:parentActivityName=".Views.SessaoLivro"/>
+        <activity android:name=".Views.CadastrarEmprestimo" android:parentActivityName=".Views.SessaoEmprestimo"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textId_dono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="ID dono"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editNome_dono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Digite o nome do dono do livro"
+            android:inputType="textCapWords|textCapSentences" />
+
+        <EditText
+            android:id="@+id/editEmail_dono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Digite o e-mail do dono do livro"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTelefone_dono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Digite o telefone do dono do livro"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/button_update_dono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#3a21d4"
+            android:contentDescription="Confirmar alteração das informações do dono"
+            android:text="Alterar dono"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_delete_dono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#d42121"
+            android:contentDescription="Confirmar Excluisão do dono"
+            android:text="Excluir dono"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <View
+            android:background="#C5C5C5"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
