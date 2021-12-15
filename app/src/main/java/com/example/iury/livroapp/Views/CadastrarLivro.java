@@ -38,6 +38,8 @@ public class CadastrarLivro extends AppCompatActivity {
         editEditora_livro = findViewById(R.id.editEditora_livro);
         editPaginas_livro = findViewById(R.id.editPaginas_livro);
         editAno_publicacao = findViewById(R.id.editAno_publicacao);
+        editEditora_livro.setTransformationMethod(null);
+        editPaginas_livro.setTransformationMethod(null);
         // Trecho para o campo da categoria do livro pegar valores do array em string.xml
         Categoria_livro = getResources().getStringArray(R.array.categoria_livro);
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, Categoria_livro);
