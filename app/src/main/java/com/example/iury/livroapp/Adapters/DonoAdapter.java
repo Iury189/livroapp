@@ -137,6 +137,7 @@ public class DonoAdapter extends RecyclerView.Adapter<DonoAdapter.ViewHolder> {
             editTelefone_dono = itemView.findViewById(R.id.editTelefone_dono);
             button_delete = itemView.findViewById(R.id.button_delete_dono);
             button_update = itemView.findViewById(R.id.button_update_dono);
+            editTelefone_dono.setTransformationMethod(null);
             editTelefone_dono.addTextChangedListener(new MaskTextWatcher(editTelefone_dono, new SimpleMaskFormatter("(NN) NNNN-NNNN")));
         }
     }
