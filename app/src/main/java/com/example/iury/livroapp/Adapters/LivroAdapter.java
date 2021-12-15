@@ -146,6 +146,8 @@ public class LivroAdapter extends RecyclerView.Adapter<LivroAdapter.ViewHolder> 
             editEditora_livro = itemView.findViewById(R.id.editEditora_livro);
             editPaginas_livro = itemView.findViewById(R.id.editPaginas_livro);
             editAno_publicacao = itemView.findViewById(R.id.editAno_publicacao);
+            editEditora_livro.setTransformationMethod(null);
+            editPaginas_livro.setTransformationMethod(null);
             button_update = itemView.findViewById(R.id.button_update_livro);
             button_delete = itemView.findViewById(R.id.button_delete_livro);
             // Trecho para o campo da categoria do livro pegar valores do array em string.xml
