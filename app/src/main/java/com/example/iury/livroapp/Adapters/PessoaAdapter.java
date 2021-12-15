@@ -138,6 +138,7 @@ public class PessoaAdapter extends RecyclerView.Adapter<PessoaAdapter.ViewHolder
             editTelefone_pessoa = itemView.findViewById(R.id.editTelefone_pessoa);
             button_delete = itemView.findViewById(R.id.button_delete_pessoa);
             button_update = itemView.findViewById(R.id.button_update_pessoa);
+            editTelefone_pessoa.setTransformationMethod(null);
             editTelefone_pessoa.addTextChangedListener(new MaskTextWatcher(editTelefone_pessoa, new SimpleMaskFormatter("(NN) NNNN-NNNN")));
         }
     }
