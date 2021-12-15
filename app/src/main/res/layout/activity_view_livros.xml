@@ -62,7 +62,7 @@
             android:hint="Digite a quantidade de páginas do livro"
             android:layout_margin="5dp"
             android:maxLength="3"
-            android:inputType="number" />
+            android:inputType="numberPassword" />
 
         <EditText
             android:id="@+id/editAno_publicacao"
@@ -71,7 +71,7 @@
             android:hint="Digite o ano de publicação do livro"
             android:layout_margin="5dp"
             android:maxLength="4"
-            android:inputType="number" />
+            android:inputType="numberPassword" />
 
         <Button
             android:id="@+id/button_update_livro"
