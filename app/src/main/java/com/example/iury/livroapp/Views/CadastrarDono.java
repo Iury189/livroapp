@@ -35,6 +35,7 @@ public class CadastrarDono extends AppCompatActivity {
         editNome_dono = findViewById(R.id.editNome_dono);
         editEmail_dono = findViewById(R.id.editEmail_dono);
         editTelefone_dono = findViewById(R.id.editTelefone_dono);
+	editTelefone_dono.setTransformationMethod(null);
         // Máscara telefone
 	editTelefone_dono.addTextChangedListener(new MaskTextWatcher(editTelefone_dono, new SimpleMaskFormatter("(NN) NNNN-NNNN")));
         // Botão cadastrar dono (possui AlertDialog para confirmar a operação)
