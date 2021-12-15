@@ -34,6 +34,7 @@ public class CadastrarPessoa extends AppCompatActivity {
         editNome_pessoa = findViewById(R.id.editNome_pessoa);
         editEmail_pessoa = findViewById(R.id.editEmail_pessoa);
         editTelefone_pessoa = findViewById(R.id.editTelefone_pessoa);
+        editTelefone_pessoa.setTransformationMethod(null);
         // Máscara telefone
         editTelefone_pessoa.addTextChangedListener(new MaskTextWatcher(editTelefone_pessoa, new SimpleMaskFormatter("(NN) NNNN-NNNN")));
         // Botão cadastrar pessoa (possui AlertDialog para confirmar a operação)
